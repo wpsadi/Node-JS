@@ -51,6 +51,8 @@ let srvr = http.createServer(function(req,res){
     
 })
 
-srvr.listen(8000,function(){
+
+const port = process.env.PORT || 3000
+srvr.listen(port,function(){
     console.log("Server is up online")
 })
